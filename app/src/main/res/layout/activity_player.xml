@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="@drawable/playerpage_bg"
+    tools:context=".PlayerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/song_image"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_music"/>
+
+        <TextView
+            android:id="@+id/song_name_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Song Name"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:gravity="center"
+            android:layout_margin="20dp"
+            android:textStyle="bold"
+            android:textSize="23dp"
+            android:padding="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <SeekBar
+                android:id="@+id/seek_bar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/song_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/seek_bar"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:text="0:00"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+
+            <TextView
+                android:id="@+id/song_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4:10"
+                android:layout_toRightOf="@id/seek_bar"
+                android:layout_marginRight="20dp"
+                android:layout_centerInParent="true"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="false"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/play_btn"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/ic_pause_btn"
+                android:layout_centerInParent="true"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/skip_next_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_skip_next"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/play_btn"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/skip_prev_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_skip_previous"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/play_btn"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
