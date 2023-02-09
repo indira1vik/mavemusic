@@ -88,8 +88,6 @@ public class MainActivity extends AppCompatActivity {
             items[i] = mySong.get(i).getName().toString().replace(".mp3","");
         }
 
-        Arrays.sort(items);
-
         customAdapter customAdapter = new customAdapter();
         listView.setAdapter(customAdapter);
 
