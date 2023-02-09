@@ -1,5 +1,5 @@
 # mavemusic
 This is a Music player searches local saved songs and plays it eith great UI.<br>
-![screen0](https://user-images.githubusercontent.com/90179632/217826271-f76a8d2d-f60a-4439-b04d-c5401d544d34.jpeg)
-![screen1](https://user-images.githubusercontent.com/90179632/217826329-e4b14007-a8db-4cf3-bbb9-5e1dc5e95dd6.jpeg)
-![screen2](https://user-images.githubusercontent.com/90179632/217826350-07c6ece8-1869-4400-b7a2-3c98f71a5e84.jpeg)
+![screen0 (Small)](https://user-images.githubusercontent.com/90179632/217827051-3932290e-7ab3-440f-93aa-51c98cb80b3a.jpeg)
+![screen1 (Small)](https://user-images.githubusercontent.com/90179632/217827065-1559a0d6-ee09-4ced-bff0-8443ea30c96d.jpeg)
+![screen2 (Small)](https://user-images.githubusercontent.com/90179632/217827075-f35cdbf4-fd7f-4a58-9b51-11412f42df64.jpeg)
